@@ -39,7 +39,7 @@ class Code
         var r = client.PostAsync(webhook, content).Result;
 
         // fyi you can't compare the status code with an int
-        // so you can do if (r.StatusCode == 200) or shit like that
+        // so you can't do if (r.StatusCode == 200) or shit like that
 
         if (r.StatusCode == System.Net.HttpStatusCode.NoContent) // btw NoContent = Code 204
         {
